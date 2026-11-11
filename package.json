@@ -1,0 +1,19 @@
+{
+  "name": "mercury-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "MCP server for controlling Mercury (Firefox ESR fork) over WebDriver BiDi",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node test/smoke.mjs && node test/owner.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "puppeteer-core": "^25.17.0",
+    "zod": "^4.6.7"
+  }
+}
